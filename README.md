@@ -5,3 +5,9 @@ Server port number: 22663
 
 If you want to increase the user information, you can write it in the corresponding line in the code or you can enter 
 it yourself in the database.
+
+Currently registered Ids and passwords:
+
+"('0479', 'helloworld'),"
+"('0550', 'password'),"
+ "('8795', 'merhaba'),"
