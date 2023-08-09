@@ -85,6 +85,11 @@ int main() {
         exit(1);
     }
 
+  int optval = 1;
+  if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &optval, sizeof(optval)) == -1) {
+    perror("setsockopt");
+    exit(1);
+  }
     serverAddr.sin_family = AF_INET;
     serverAddr.sin_port = htons(22663);  // Choose a suitable port
     serverAddr.sin_addr.s_addr = INADDR_ANY;
